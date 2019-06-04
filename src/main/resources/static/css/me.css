@@ -1,5 +1,5 @@
 body{
-    background: url("../images/background.jpg");
+    background: url("../images/background.jpg")!important;
 }
 
 /*-----上下左右的缩小-----*/
@@ -69,6 +69,10 @@ body{
 .m-padded-tb-foot {
     padding-top: 30px !important;
 }
+.m-padded-leaf{
+    padding-left: auto;
+    padding-right: auto;
+}
 
 /*文本*/
 .m-text-size-small{
@@ -114,6 +118,12 @@ body{
 }
 .m-margin-ve-small{
     margin: 20px 20px !important;
+
+}
+.m-center{
+    padding-left: 200px !important;
+
+
 
 }
 
