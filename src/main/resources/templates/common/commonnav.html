@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en"  xmlns:th="http://www.thymeleaf.org">
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
+<head>
+</head>
+<body>
+<!--标题nav-->
+<nav th:fragment="nav(n)" class="ui inverted segment attached m-padded-tb-mini">
+    <div class="ui container">
+        <div class="ui inverted secondary menu stackable">
+            <h2 class="ui teal header item ">blog</h2>
+            <a href="#" class="mobile item mobile-display-hide " th:classappend="${n==1} ? 'active'"><i class="icon home"></i>首页</a>
+            <a href="#" class="mobile item mobile-display-hide" th:classappend="${n==2} ? 'active'"><i class="icon idea"></i>分类</a>
+            <a href="#" class="mobile item mobile-display-hide" th:classappend="${n==3} ? 'active'"><i class="icon folder open"></i>归档</a>
+            <a href="#" class="mobile item mobile-display-hide" th:classappend="${n==4} ? 'active'"><i class="icon tags"></i>标签</a>
+            <a href="#" class="mobile item mobile-display-hide" th:classappend="${n==5} ? 'active'"><i class="icon info"></i>关于我</a>
+            <div class="item right">
+                <div class="ui mobile input inverted icon transparent mobile-display-hide">
+                    <input type="text" placeholder="Search.....">
+                    <i class="search icon link"></i>
+                </div>
+            </div>
+
+        </div>
+        <div class="ui m-right-top">
+            <a href="#" class="ui black vertical animated button m-display meu" style="width: 50px">
+                <div class="hidden content">展开</div>
+                <div class="visible content">
+                    <i class="sidebar icon"></i>
+                </div>
+            </a>
+            <!--        <a href="#" class="ui button black m-right-top m-display">-->
+            <!--            <i class="sidebar icon "></i>-->
+            <!--        </a>-->
+
+        </div>
+    </div>
+
+
+</nav>
+<footer th:fragment="foot" class="ui segment vi inverted m-padded-tb-massive ">
+    <div class="ui container center aligned m-opacity-mini">
+        <div class="ui grid divided inverted stackable">
+            <div class="three wide column ">
+                <img src="../static/images/wechart.png" class="ui rounded image centered" width="100px" height="100">
+            </div>
+            <div class="three wide column">
+                <h4 class="ui header inverted">最新博客</h4>
+                <div class="ui inverted link list">
+                    <a href="#" class="item">用户故事(user story)</a>
+                    <a href="#" class="item">用户故事(user story)</a>
+                    <a href="#" class="item">用户故事(user story)</a>
+                </div>
+            </div>
+            <div class="three wide column">
+                <h4 class="ui header inverted">联系我们</h4>
+                <div class="ui inverted link list">
+                    <a href="#" class="item">Email :11111111@qq.com</a>
+                    <a href="#" class="item">QQ:1212121</a>
+                </div>
+            </div>
+            <div class="seven wide column">
+                <h4>个人总结</h4>
+                <div class="ui inverted  ">
+                    <p class="m-opacity-mini m-text-thin">低首抬眉之间，好多日子便水远山长了。所谓的天长地久，一生一世，不过是一朵花开的时间；所谓的姹紫嫣红，也不过是一场东风过隙</P> </div>
+
+            </div>
+        </div>
+        <div class="ui inverted section divider">
+            <p class="m-text-thin m-text-space m-padded-tb-foot m-text-size-small">Copyright © 2019 sunset All Rights Reserved
+                如有疑问联系作者 </p>
+        </div>
+    </div>
+
+</footer>
+
+</body>
+</html>

@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en"  xmlns:th="http://www.thymeleaf.org">
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
+<head th:replace="common/common ::head(~{::title})">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <meta charset="UTF-8">
+    <title>关于我</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/semantic-ui@2.4.2/dist/semantic.min.css">
+    <link rel="stylesheet" href="../static/css/me.css">
+</head>
+<body>
+<!--导航条-->
+<nav th:replace="common/commonnav::nav(5)" class="ui inverted segment attached m-padded-tb-mini">
+    <div class="ui container">
+        <div class="ui inverted secondary menu stackable">
+            <h2 class="ui teal header item ">blog</h2>
+            <a href="#" class="mobile item mobile-display-hide"><i class="icon home"></i>首页</a>
+            <a href="#" class="mobile item mobile-display-hide"><i class="icon idea"></i>分类</a>
+            <a href="#" class="mobile item mobile-display-hide"><i class="icon folder open"></i>归档</a>
+            <a href="#" class="mobile item mobile-display-hide"><i class="icon tags"></i>标签</a>
+            <a href="#" class="mobile item mobile-display-hide"><i class="icon info"></i>关于我</a>
+            <div class="item right">
+                <div class="ui mobile input inverted icon transparent mobile-display-hide">
+                    <input type="text" placeholder="Search.....">
+                    <i class="search icon link"></i>
+                </div>
+            </div>
+
+        </div>
+        <div class="ui m-right-top">
+            <a href="#" class="ui black vertical animated button m-display meu" style="width: 50px">
+                <div class="hidden content">展开</div>
+                <div class="visible content">
+                    <i class="sidebar icon"></i>
+                </div>
+            </a>
+            <!--        <a href="#" class="ui button black m-right-top m-display">-->
+            <!--            <i class="sidebar icon "></i>-->
+            <!--        </a>-->
+
+        </div>
+    </div>
+
+
+</nav>
+<!--中间部分-->
+<div class="m-margin-tb-big">
+    <div class="ui container">
+        <div class="ui grid stackable">
+            <div class="eleven wide column">
+                <div class="segment ui">
+                    <img src="../static/images/bl2.jpg" alt="" class="image ui rounded">
+
+                </div>
+
+            </div>
+            <div class="five wide column">
+                <div class="segment ui attached">
+                    <h4 class="ui m-text-space ">关于我</h4>
+                </div>
+                <div class="segment ui attached">
+                    <p class="m-text-thin m-text-lined m-text-space">罗曼罗兰说：世上只有一种英雄主义，就是在认清生活真相之后依然热爱生活。 人生如逆水旅，
+                        我们都不是勇者，年轻的时候，在跌跌撞撞中摸索着前行，逐渐走向成熟，待到懂得的时候，却已不再年轻了。 慢慢的知道，行走在尘世，
+                        最重要的是修炼自已的内心，让其变得强大起 </p>
+                </div>
+                <div class="segment ui attached">
+                    <a class="ui label orange basic large left pointing " style="margin: 10px 10px">运动</a>
+                    <a class="ui label orange basic large left pointing"style="margin: 10px 10px">编程</a>
+                    <a class="ui label orange basic large left pointing " style="margin: 10px 10px">思想</a>
+                    <a class="ui label orange basic large left pointing " style="margin: 10px 10px">写作</a>
+                    <a class="ui label orange basic large left pointing " style="margin: 10px 10px">写作</a>
+                </div>
+                <div class="segment ui attached orange">
+                    <a class="ui label teal basic large left pointing " style="margin: 10px 10px">java</a>
+                    <a class="ui label teal basic large left pointing "style="margin: 10px 10px">python</a>
+                    <a class="ui label teal basic large left pointing " style="margin: 10px 10px">c语言</a>
+                    <a class="ui label teal basic large left pointing "  style="margin: 10px 10px">js</a>
+                    <a class="ui label teal basic large left pointing " style="margin: 10px 10px">css</a>
+
+                </div>
+                <div class="segment ui attached icon bottom teal">
+                    <a href="#" class="ui button icon circular blue qq-p">
+                        <i class="qq icon"></i>
+                    </a>
+                    <a href="#" class="ui button icon circular green wechat-p">
+                        <i class="weixin icon"></i>
+                    </a>
+                    <a href="#" class="ui button icon circular grey github-p">
+                        <i class="github icon"></i>
+                    </a>
+                    <div class="ui qq flowing popup transition hidden">
+                        <img src="../static/images/wechart.png" alt="" class="ui rounded image" style="width: 100px">
+                    </div>
+                    <div class="ui wechat flowing popu transition hidden">
+                        <img src="../static/images/wechart.png" alt="" class="ui rounded image" style="width: 100px">
+                    </div>
+                    <div class="ui github flowing popup transition hidden">
+                        <img src="../static/images/wechart.png" alt="" class="ui rounded image" style="width: 100px">
+                    </div>
+                </div>
+
+            </div>
+
+
+        </div>
+
+
+    </div>
+</div>
+<br>
+<br>
+<br>
+
+
+<!--底部footer-->
+<footer th:replace="common/commonnav :: foot">
+
+</footer>
+<script src="http://lib.sinaapp.com/js/jquery/2.0.2/jquery-2.0.2.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/semantic-ui@2.4.2/dist/semantic.min.js"></script>
+<script>
+    $('.meu').click(function () {
+
+        $('.mobile').toggleClass('mobile-display-hide')
+
+    })
+    $('.wechat-p').popup({
+        popup : $('.wechat'),
+
+    });
+    $('.qq-p').popup({
+        popup : $('.qq.popup'),
+
+    });
+    $('.github-p').popup({
+        popup : $('.git'),
+
+    })
+
+
+
+</script>
+</body>
+
+</html>

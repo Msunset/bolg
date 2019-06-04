@@ -1,0 +1,612 @@
+<!DOCTYPE html>
+<html lang="en"  xmlns:th="http://www.thymeleaf.org">
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
+<head th:replace="common/common ::head(~{::title})">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <meta charset="UTF-8">
+    <title>首页</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/semantic-ui@2.4.2/dist/semantic.min.css">
+    <link rel="stylesheet" href="../static/css/me.css">
+</head>
+<body>
+<!--导航条-->
+<nav th:fragment="comnav" th:replace="common/commonnav::nav(1)" class="ui inverted segment attached m-padded-tb-mini">
+    <div class="ui container">
+        <div class="ui inverted secondary menu stackable">
+            <h2 class="ui teal header item ">blog</h2>
+            <a href="#" class="mobile item mobile-display-hide"><i class="icon home"></i>首页</a>
+            <a href="#" class="mobile item mobile-display-hide"><i class="icon idea"></i>分类</a>
+            <a href="#" class="mobile item mobile-display-hide"><i class="icon folder open"></i>归档</a>
+            <a href="#" class="mobile item mobile-display-hide"><i class="icon tags"></i>标签</a>
+            <a href="#" class="mobile item mobile-display-hide"><i class="icon info"></i>关于我</a>
+            <div class="item right">
+                <div class="ui mobile input inverted icon transparent mobile-display-hide">
+                    <input type="text" placeholder="Search.....">
+                    <i class="search icon link"></i>
+                </div>
+            </div>
+
+        </div>
+        <div class="ui m-right-top">
+            <a href="#" class="ui black vertical animated button m-display meu" style="width: 50px">
+                <div class="hidden content">展开</div>
+                <div class="visible content">
+                    <i class="sidebar icon"></i>
+                </div>
+            </a>
+            <!--        <a href="#" class="ui button black m-right-top m-display">-->
+            <!--            <i class="sidebar icon "></i>-->
+            <!--        </a>-->
+
+        </div>
+    </div>
+
+
+</nav>
+<!--中间部分-->
+<div class="m-container m-padded-tb-massive ">
+    <div class="ui container">
+        <div class="ui grid stackable">
+            <!--            左边列表-->
+            <div class="eleven wide column ">
+                <!--头部-->
+                <div class="ui segment attached rounded">
+                    <div class="ui two column grid middle aligned">
+                        <div class="column">
+                            <h2 class="ui teal header ">博客</h2>
+                        </div>
+                        <div class="column right aligned">
+                            共 <h3 class="ui orange header m-line-block m-padded-tb-tiny m-text-thin">14</h3> 篇
+                        </div>
+                    </div>
+                </div>
+                <!--                内容部分-->
+                <div class="ui segment attached">
+                    <div class="ui segment padded basic">
+                        <div class="ui grid column stackable mobile reversed">
+                            <div class="eleven wide column">
+                                <h3 class="ui header ">生活的海洋</h3>
+                                <p class=" m-text-space header m-text-thin">
+                                    生活的海洋并不像碧波涟漪的西子湖，随着时间的流动，它时而平静如镜，时而浪花飞溅，时而巨浪冲天……人们在经受大风大浪的考验之后，往往会变得更加坚强。
+                                </p>
+                                <div class="ui grid column ">
+                                    <div class="eleven wide column">
+                                        <div class="ui horizontal link list">
+                                            <div class="item">
+                                                <img src="https://picsum.photos/id/1014/6016/4000" alt=""
+                                                     class="ui image avatar">
+                                                <p class="content ">哈哈哈</p>
+                                            </div>
+                                            <div class=" item m-text-size ">
+                                                <i class="ui  calendar icon m-line-block"></i> 2019-09-09
+                                            </div>
+                                            <div class="item">
+                                                <i class="eye icon"></i> 2323
+                                            </div>
+
+                                        </div>
+
+                                    </div>
+                                    <div class="five wide column right aligned">
+                                        <a href="#" class="ui label teal basic">认知升级</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="five wide column">
+                                <a href="#" target="_blank">
+                                    <img src="../static/images/bl1.jpg" alt=""
+                                         class="ui rounded image right aligned">
+                                </a>
+                            </div>
+                        </div>
+                        <div class="ui grid column">
+
+                        </div>
+                    </div>
+
+
+                </div>
+                <div class="ui segment attached">
+                    <div class="ui segment padded basic">
+                        <div class="ui grid column stackable mobile reversed">
+                            <div class="eleven wide column">
+                                <h3 class="ui header ">生活的海洋</h3>
+                                <p class=" m-text-space header m-text-thin">
+                                    生活的海洋并不像碧波涟漪的西子湖，随着时间的流动，它时而平静如镜，时而浪花飞溅，时而巨浪冲天……人们在经受大风大浪的考验之后，往往会变得更加坚强。
+                                </p>
+                                <div class="ui grid column ">
+                                    <div class="eleven wide column">
+                                        <div class="ui horizontal link list">
+                                            <div class="item">
+                                                <img src="https://picsum.photos/id/1014/6016/4000" alt=""
+                                                     class="ui image avatar">
+                                                <p class="content ">哈哈哈</p>
+                                            </div>
+                                            <div class=" item m-text-size ">
+                                                <i class="ui  calendar icon m-line-block"></i> 2019-09-09
+                                            </div>
+                                            <div class="item">
+                                                <i class="eye icon"></i> 2323
+                                            </div>
+
+                                        </div>
+
+                                    </div>
+                                    <div class="five wide column right aligned">
+                                        <a href="#" class="ui label teal basic">认知升级</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="five wide column">
+                                <a href="#" target="_blank">
+                                    <img src="https://picsum.photos/id/1014/6016/4000" alt=""
+                                         class="ui rounded image right aligned">
+                                </a>
+                            </div>
+                        </div>
+                        <div class="ui grid column">
+
+                        </div>
+                    </div>
+
+
+                </div>
+                <div class="ui segment attached">
+                    <div class="ui segment padded basic">
+                        <div class="ui grid column stackable mobile reversed">
+                            <div class="eleven wide column">
+                                <h3 class="ui header ">生活的海洋</h3>
+                                <p class=" m-text-space header m-text-thin">
+                                    生活的海洋并不像碧波涟漪的西子湖，随着时间的流动，它时而平静如镜，时而浪花飞溅，时而巨浪冲天……人们在经受大风大浪的考验之后，往往会变得更加坚强。
+                                </p>
+                                <div class="ui grid column ">
+                                    <div class="eleven wide column">
+                                        <div class="ui horizontal link list">
+                                            <div class="item">
+                                                <img src="https://picsum.photos/id/1014/6016/4000" alt=""
+                                                     class="ui image avatar">
+                                                <p class="content ">哈哈哈</p>
+                                            </div>
+                                            <div class=" item m-text-size ">
+                                                <i class="ui  calendar icon m-line-block"></i> 2019-09-09
+                                            </div>
+                                            <div class="item">
+                                                <i class="eye icon"></i> 2323
+                                            </div>
+
+                                        </div>
+
+                                    </div>
+                                    <div class="five wide column right aligned">
+                                        <a href="#" class="ui label teal basic">认知升级</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="five wide column">
+                                <a href="#" target="_blank">
+                                    <img src="https://picsum.photos/id/1014/6016/4000" alt=""
+                                         class="ui rounded image right aligned">
+                                </a>
+                            </div>
+                        </div>
+                        <div class="ui grid column">
+
+                        </div>
+                    </div>
+
+
+                </div>
+                <div class="ui segment attached">
+                    <div class="ui segment padded basic">
+                        <div class="ui grid column stackable mobile reversed">
+                            <div class="eleven wide column">
+                                <h3 class="ui header ">生活的海洋</h3>
+                                <p class=" m-text-space header m-text-thin">
+                                    生活的海洋并不像碧波涟漪的西子湖，随着时间的流动，它时而平静如镜，时而浪花飞溅，时而巨浪冲天……人们在经受大风大浪的考验之后，往往会变得更加坚强。
+                                </p>
+                                <div class="ui grid column ">
+                                    <div class="eleven wide column">
+                                        <div class="ui horizontal link list">
+                                            <div class="item">
+                                                <img src="https://picsum.photos/id/1014/6016/4000" alt=""
+                                                     class="ui image avatar">
+                                                <p class="content ">哈哈哈</p>
+                                            </div>
+                                            <div class=" item m-text-size ">
+                                                <i class="ui  calendar icon m-line-block"></i> 2019-09-09
+                                            </div>
+                                            <div class="item">
+                                                <i class="eye icon"></i> 2323
+                                            </div>
+
+                                        </div>
+
+                                    </div>
+                                    <div class="five wide column right aligned">
+                                        <a href="#" class="ui label teal basic">认知升级</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="five wide column">
+                                <a href="#" target="_blank">
+                                    <img src="https://picsum.photos/id/1014/6016/4000" alt=""
+                                         class="ui rounded image right aligned">
+                                </a>
+                            </div>
+                        </div>
+                        <div class="ui grid column">
+
+                        </div>
+                    </div>
+
+
+                </div>
+                <div class="ui segment attached">
+                    <div class="ui segment padded basic">
+                        <div class="ui grid column stackable mobile reversed">
+                            <div class="eleven wide column">
+                                <h3 class="ui header ">生活的海洋</h3>
+                                <p class=" m-text-space header m-text-thin">
+                                    生活的海洋并不像碧波涟漪的西子湖，随着时间的流动，它时而平静如镜，时而浪花飞溅，时而巨浪冲天……人们在经受大风大浪的考验之后，往往会变得更加坚强。
+                                </p>
+                                <div class="ui grid column ">
+                                    <div class="eleven wide column">
+                                        <div class="ui horizontal link list">
+                                            <div class="item">
+                                                <img src="https://picsum.photos/id/1014/6016/4000" alt=""
+                                                     class="ui image avatar">
+                                                <p class="content ">哈哈哈</p>
+                                            </div>
+                                            <div class=" item m-text-size ">
+                                                <i class="ui  calendar icon m-line-block"></i> 2019-09-09
+                                            </div>
+                                            <div class="item">
+                                                <i class="eye icon"></i> 2323
+                                            </div>
+
+                                        </div>
+
+                                    </div>
+                                    <div class="five wide column right aligned">
+                                        <a href="#" class="ui label teal basic">认知升级</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="five wide column">
+                                <a href="#" target="_blank">
+                                    <img src="https://picsum.photos/id/1014/6016/4000" alt=""
+                                         class="ui rounded image right aligned">
+                                </a>
+                            </div>
+                        </div>
+                        <div class="ui grid column">
+
+                        </div>
+                    </div>
+
+
+                </div>
+                <div class="ui segment attached">
+                    <div class="ui segment padded basic">
+                        <div class="ui grid column stackable mobile reversed">
+                            <div class="eleven wide column">
+                                <h3 class="ui header ">生活的海洋</h3>
+                                <p class=" m-text-space header m-text-thin">
+                                    生活的海洋并不像碧波涟漪的西子湖，随着时间的流动，它时而平静如镜，时而浪花飞溅，时而巨浪冲天……人们在经受大风大浪的考验之后，往往会变得更加坚强。
+                                </p>
+                                <div class="ui grid column ">
+                                    <div class="eleven wide column">
+                                        <div class="ui horizontal link list">
+                                            <div class="item">
+                                                <img src="https://picsum.photos/id/1014/6016/4000" alt=""
+                                                     class="ui image avatar">
+                                                <p class="content ">哈哈哈</p>
+                                            </div>
+                                            <div class=" item m-text-size ">
+                                                <i class="ui  calendar icon m-line-block"></i> 2019-09-09
+                                            </div>
+                                            <div class="item">
+                                                <i class="eye icon"></i> 2323
+                                            </div>
+
+                                        </div>
+
+                                    </div>
+                                    <div class="five wide column right aligned">
+                                        <a href="#" class="ui label teal basic">认知升级</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="five wide column">
+                                <a href="#" target="_blank">
+                                    <img src="https://picsum.photos/id/1014/6016/4000" alt=""
+                                         class="ui rounded image right aligned">
+                                </a>
+                            </div>
+                        </div>
+                        <div class="ui grid column">
+
+                        </div>
+                    </div>
+
+
+                </div>
+                <div class="ui segment attached">
+                    <div class="ui segment padded basic">
+                        <div class="ui grid column stackable mobile reversed">
+                            <div class="eleven wide column">
+                                <h3 class="ui header ">生活的海洋</h3>
+                                <p class=" m-text-space header m-text-thin">
+                                    生活的海洋并不像碧波涟漪的西子湖，随着时间的流动，它时而平静如镜，时而浪花飞溅，时而巨浪冲天……人们在经受大风大浪的考验之后，往往会变得更加坚强。
+                                </p>
+                                <div class="ui grid column ">
+                                    <div class="eleven wide column">
+                                        <div class="ui horizontal link list">
+                                            <div class="item">
+                                                <img src="https://picsum.photos/id/1014/6016/4000" alt=""
+                                                     class="ui image avatar">
+                                                <p class="content ">哈哈哈</p>
+                                            </div>
+                                            <div class=" item m-text-size ">
+                                                <i class="ui  calendar icon m-line-block"></i> 2019-09-09
+                                            </div>
+                                            <div class="item">
+                                                <i class="eye icon"></i> 2323
+                                            </div>
+
+                                        </div>
+
+                                    </div>
+                                    <div class="five wide column right aligned">
+                                        <a href="#" class="ui label teal basic">认知升级</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="five wide column">
+                                <a href="#" target="_blank">
+                                    <img src="https://picsum.photos/id/1014/6016/4000" alt=""
+                                         class="ui rounded image right aligned">
+                                </a>
+                            </div>
+                        </div>
+                        <div class="ui grid column">
+
+                        </div>
+                    </div>
+
+
+                </div>
+                <div class="ui segment attached">
+                    <div class="ui segment padded basic">
+                        <div class="ui grid column stackable mobile reversed">
+                            <div class="eleven wide column">
+                                <h3 class="ui header ">生活的海洋</h3>
+                                <p class=" m-text-space header m-text-thin">
+                                    生活的海洋并不像碧波涟漪的西子湖，随着时间的流动，它时而平静如镜，时而浪花飞溅，时而巨浪冲天……人们在经受大风大浪的考验之后，往往会变得更加坚强。
+                                </p>
+                                <div class="ui grid column ">
+                                    <div class="eleven wide column">
+                                        <div class="ui horizontal link list">
+                                            <div class="item">
+                                                <img src="https://picsum.photos/id/1014/6016/4000" alt=""
+                                                     class="ui image avatar">
+                                                <p class="content ">哈哈哈</p>
+                                            </div>
+                                            <div class=" item m-text-size ">
+                                                <i class="ui  calendar icon m-line-block"></i> 2019-09-09
+                                            </div>
+                                            <div class="item">
+                                                <i class="eye icon"></i> 2323
+                                            </div>
+
+                                        </div>
+
+                                    </div>
+                                    <div class="five wide column right aligned">
+                                        <a href="#" class="ui label teal basic">认知升级</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="five wide column">
+                                <a href="#" target="_blank">
+                                    <img src="https://picsum.photos/id/1014/6016/4000" alt=""
+                                         class="ui rounded image right aligned">
+                                </a>
+                            </div>
+                        </div>
+                        <div class="ui grid column">
+
+                        </div>
+                    </div>
+
+
+                </div>
+
+                <!--                底部-->
+                <div class="ui bottom segment attached">
+
+                    <div class="ui two column grid ">
+                        <div class="ui  column">
+                            <a href="#" class="ui  button teal mini basic">上一页</a>
+                        </div>
+                        <div class="ui column right aligned ">
+                            <a href="#" class="ui button teal mini basic">下一页</a>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+            <!--            右边卡片-->
+            <div class="five wide column">
+                <!--                分类卡片-->
+                <div class="ui segments">
+                    <div class="ui secondary segment">
+                        <div class="ui two column grid">
+                            <div class="column icon">
+                                <i class="icon idea"></i>分类
+                            </div>
+                            <div class="column right aligned icon "><a href="#" target="_blank">more<i
+                                    class="icon angle double right"></i></a></div>
+                        </div>
+                        <br>
+                        <div class="ui segment attached">
+                            <div class="ui two column grid m-padded-tb-mini">
+                                <div class="ui column padded ">
+                                    <p class="ui m-text-size m-padded-tb-tiny">学习日志</p>
+                                </div>
+                                <div class="ui column right aligned">
+                                    <p class="ui label teal left pointing basic">18 </p>
+                                </div>
+
+                            </div>
+
+                        </div>
+                        <div class="ui segment attached">
+                            <div class="ui two column grid m-padded-tb-mini">
+                                <div class="ui column padded">
+                                    <p class="ui m-text-size m-padded-tb-tiny">学习日志</p>
+                                </div>
+                                <div class="ui column right aligned">
+                                    <p class="ui label teal left pointing basic">18 </p>
+                                </div>
+
+                            </div>
+
+                        </div>
+                        <div class="ui segment attached">
+                            <div class="ui two column grid m-padded-tb-mini">
+                                <div class="ui column padded">
+                                    <p class="ui m-text-size m-padded-tb-tiny">学习日志</p>
+                                </div>
+                                <div class="ui column right aligned">
+                                    <p class="ui label teal left pointing basic">18 </p>
+                                </div>
+
+                            </div>
+
+                        </div>
+                        <div class="ui segment attached">
+                            <div class="ui two column grid m-padded-tb-mini">
+                                <div class="ui column padded">
+                                    <p class="ui m-text-size m-padded-tb-tiny">学习日志</p>
+                                </div>
+                                <div class="ui column right aligned">
+                                    <p class="ui label teal left pointing basic">18 </p>
+                                </div>
+
+                            </div>
+
+                        </div>
+                    </div>
+
+                </div>
+                <!--                标签卡片-->
+                <div class="ui segments">
+                    <div class="ui secondary segment">
+                        <div class="ui two column grid">
+                            <div class="column">
+                                <i class="icon  tag"></i>标签
+
+                            </div>
+                            <div class="column right aligned">
+                                <div class="column"><a href="#" target="_blank">more<i
+                                        class="icon angle double right"></i></a>
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="ui">
+                            <br>
+                            <a class="ui label teal basic left pointing " target="_blank">
+                                方法论
+                                <div class="detail">23</div>
+                            </a>
+                            <a class="ui label teal basic left pointing " target="_blank">
+                                方法论
+                                <div class="detail">23</div>
+                            </a>
+                            <a class="ui label teal basic left pointing " target="_blank">
+                                方法论
+                                <div class="detail">23</div>
+                            </a>
+                            <a class="ui label teal basic left pointing m-margin-tb-tiny" target="_blank">
+                                方法论
+                                <div class="detail">23</div>
+                            </a>
+                            <a class="ui label teal basic left pointing m-margin-tb-tiny" target="_blank">
+                                方法论
+                                <div class="detail">23</div>
+                            </a>
+
+                            <a class="ui label teal basic left pointing m-margin-tb-tiny" target="_blank">
+                                方法论
+                                <div class="detail">23</div>
+                            </a>
+
+                            <a class="ui label teal basic left pointing m-margin-tb-tiny" target="_blank">
+                                方法论
+                                <div class="detail">23</div>
+                            </a>
+
+
+                        </div>
+                    </div>
+                </div>
+                <!--                最新推荐-->
+                <div class="ui segment">
+                    <div class="ui two column grid">
+                        <div class="column">
+                            <i class="icon thumbs up"></i>最新推荐
+                        </div>
+                        <div class="column right aligned">
+                            <a href="#" target="_blank">more<i class="icon angle double right"></i></a>
+                        </div>
+                    </div>
+                    <div class="ui segment">
+                        <a href="#" target="_blank" class="m-black">用户故事（user story）</a>
+                    </div>
+                    <div class="ui segment">
+                        <a href="#" target="_blank" class="m-black">用户故事（user story）</a>
+                    </div>
+                    <div class="ui segment">
+                        <a href="#" target="_blank" class="m-black">用户故事（user story）</a>
+                    </div>
+                    <div class="ui segment ">
+                        <a href="#" target="_blank" class="m-black">用户故事（user story）</a>
+                    </div>
+
+                </div>
+
+                <!--                扫码关注功能-->
+                <div class="ui centered ">
+                    <h4 class="ui horizontal divider header m-black m-text-lined">扫码关注</h4>
+                    <div class="ui card centered  " style="width: 200px">
+                        <img src="../static/images/wechart.png" alt="" class="ui rounded image ">
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<!--底部footer-->
+<footer th:replace="common/commonnav :: foot"></footer>
+<script src="http://lib.sinaapp.com/js/jquery/2.0.2/jquery-2.0.2.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/semantic-ui@2.4.2/dist/semantic.min.js"></script>
+<script>
+    $('.meu').click(function () {
+
+        $('.mobile').toggleClass('mobile-display-hide')
+
+    })
+
+
+
+</script>
+</body>
+
+</html>
