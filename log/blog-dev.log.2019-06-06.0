@@ -1,0 +1,273 @@
+2019-06-06 00:00:05.712  INFO 16332 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-06-06 00:00:05.728  INFO 16332 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2019-06-06 00:00:05.780  INFO 16332 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 51 ms
+2019-06-06 00:00:20.684  INFO 16332 --- [http-nio-8080-exec-6] o.h.h.i.QueryTranslatorFactoryInitiator  : HHH000397: Using ASTQueryTranslatorFactory
+2019-06-06 00:02:17.413  INFO 16332 --- [Thread-25] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2019-06-06 00:02:17.416  INFO 16332 --- [Thread-25] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2019-06-06 00:02:17.424  INFO 16332 --- [Thread-25] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2019-06-06 00:02:17.441  INFO 16332 --- [Thread-25] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2019-06-06 00:02:19.047  INFO 16332 --- [restartedMain] com.sunset.BolgApplication               : Starting BolgApplication on DESKTOP-1UTLSP6 with PID 16332 (C:\Users\sunset\IdeaProjects\bolg\target\classes started by sunset in C:\Users\sunset\IdeaProjects\bolg)
+2019-06-06 00:02:19.048 DEBUG 16332 --- [restartedMain] com.sunset.BolgApplication               : Running with Spring Boot v2.1.5.RELEASE, Spring v5.1.7.RELEASE
+2019-06-06 00:02:19.048  INFO 16332 --- [restartedMain] com.sunset.BolgApplication               : The following profiles are active: dev
+2019-06-06 00:02:19.874  INFO 16332 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data repositories in DEFAULT mode.
+2019-06-06 00:02:19.954  INFO 16332 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 80ms. Found 1 repository interfaces.
+2019-06-06 00:02:20.104  INFO 16332 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$ca951c20] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-06-06 00:02:20.441  INFO 16332 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2019-06-06 00:02:20.443  INFO 16332 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2019-06-06 00:02:20.444  INFO 16332 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.19]
+2019-06-06 00:02:20.531  INFO 16332 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2019-06-06 00:02:20.531  INFO 16332 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1477 ms
+2019-06-06 00:02:20.692  INFO 16332 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Starting...
+2019-06-06 00:02:20.703  INFO 16332 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Start completed.
+2019-06-06 00:02:20.743  INFO 16332 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2019-06-06 00:02:21.237  INFO 16332 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2019-06-06 00:02:21.883  INFO 16332 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2019-06-06 00:02:21.969  INFO 16332 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2019-06-06 00:02:22.957  INFO 16332 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2019-06-06 00:02:23.010  WARN 16332 --- [restartedMain] aWebConfiguration$JpaWebMvcConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2019-06-06 00:02:23.032  WARN 16332 --- [restartedMain] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'requestMappingHandlerMapping' defined in class path resource [org/springframework/boot/autoconfigure/web/servlet/WebMvcAutoConfiguration$EnableWebMvcConfiguration.class]: Invocation of init method failed; nested exception is java.lang.IllegalStateException: Ambiguous mapping. Cannot map 'blogController' method 
+public java.lang.String com.sunset.web.admin.blogController.tag()
+to {GET /admin/type}: There is already 'blogController' bean method
+public java.lang.String com.sunset.web.admin.blogController.type() mapped.
+2019-06-06 00:02:23.033  INFO 16332 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2019-06-06 00:02:23.035  INFO 16332 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2019-06-06 00:02:23.036  INFO 16332 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Shutdown initiated...
+2019-06-06 00:02:23.056  INFO 16332 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Shutdown completed.
+2019-06-06 00:02:23.057  INFO 16332 --- [restartedMain] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2019-06-06 00:02:23.079  INFO 16332 --- [restartedMain] ConditionEvaluationReportLoggingListener : 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2019-06-06 00:02:23.116 ERROR 16332 --- [restartedMain] o.s.boot.SpringApplication               : Application run failed
+
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'requestMappingHandlerMapping' defined in class path resource [org/springframework/boot/autoconfigure/web/servlet/WebMvcAutoConfiguration$EnableWebMvcConfiguration.class]: Invocation of init method failed; nested exception is java.lang.IllegalStateException: Ambiguous mapping. Cannot map 'blogController' method 
+public java.lang.String com.sunset.web.admin.blogController.tag()
+to {GET /admin/type}: There is already 'blogController' bean method
+public java.lang.String com.sunset.web.admin.blogController.type() mapped.
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1778)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:593)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:515)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:320)
+	at org.springframework.beans.factory.support.AbstractBeanFactory$$Lambda$152/1448301841.getObject(Unknown Source)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:318)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:843)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:877)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:549)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:142)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:775)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:397)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:316)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1260)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1248)
+	at com.sunset.BolgApplication.main(BolgApplication.java:10)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:49)
+Caused by: java.lang.IllegalStateException: Ambiguous mapping. Cannot map 'blogController' method 
+public java.lang.String com.sunset.web.admin.blogController.tag()
+to {GET /admin/type}: There is already 'blogController' bean method
+public java.lang.String com.sunset.web.admin.blogController.type() mapped.
+	at org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry.assertUniqueMethodMapping(AbstractHandlerMethodMapping.java:618)
+	at org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry.register(AbstractHandlerMethodMapping.java:586)
+	at org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.registerHandlerMethod(AbstractHandlerMethodMapping.java:312)
+	at org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.lambda$detectHandlerMethods$1(AbstractHandlerMethodMapping.java:282)
+	at org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$$Lambda$697/550690432.accept(Unknown Source)
+	at java.util.LinkedHashMap.forEach(LinkedHashMap.java:676)
+	at org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.detectHandlerMethods(AbstractHandlerMethodMapping.java:280)
+	at org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.processCandidateBean(AbstractHandlerMethodMapping.java:252)
+	at org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.initHandlerMethods(AbstractHandlerMethodMapping.java:211)
+	at org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.afterPropertiesSet(AbstractHandlerMethodMapping.java:199)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping.afterPropertiesSet(RequestMappingHandlerMapping.java:164)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1837)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1774)
+	... 22 common frames omitted
+
+2019-06-06 00:03:06.680  INFO 15544 --- [restartedMain] com.sunset.BolgApplication               : Starting BolgApplication on DESKTOP-1UTLSP6 with PID 15544 (C:\Users\sunset\IdeaProjects\bolg\target\classes started by sunset in C:\Users\sunset\IdeaProjects\bolg)
+2019-06-06 00:03:06.684 DEBUG 15544 --- [restartedMain] com.sunset.BolgApplication               : Running with Spring Boot v2.1.5.RELEASE, Spring v5.1.7.RELEASE
+2019-06-06 00:03:06.685  INFO 15544 --- [restartedMain] com.sunset.BolgApplication               : The following profiles are active: dev
+2019-06-06 00:03:06.831  INFO 15544 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2019-06-06 00:03:06.832  INFO 15544 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2019-06-06 00:03:08.316  INFO 15544 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data repositories in DEFAULT mode.
+2019-06-06 00:03:08.493  INFO 15544 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 157ms. Found 1 repository interfaces.
+2019-06-06 00:03:09.273  INFO 15544 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$5a085c2b] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-06-06 00:03:10.533  INFO 15544 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2019-06-06 00:03:10.658  INFO 15544 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2019-06-06 00:03:10.660  INFO 15544 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.19]
+2019-06-06 00:03:11.456  INFO 15544 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2019-06-06 00:03:11.458  INFO 15544 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 4626 ms
+2019-06-06 00:03:12.012  INFO 15544 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2019-06-06 00:03:12.232  INFO 15544 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2019-06-06 00:03:12.348  INFO 15544 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2019-06-06 00:03:12.488  INFO 15544 --- [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate Core {5.3.10.Final}
+2019-06-06 00:03:12.491  INFO 15544 --- [restartedMain] org.hibernate.cfg.Environment            : HHH000206: hibernate.properties not found
+2019-06-06 00:03:12.754  INFO 15544 --- [restartedMain] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.0.4.Final}
+2019-06-06 00:03:13.452  INFO 15544 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2019-06-06 00:03:15.293  INFO 15544 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2019-06-06 00:03:15.501  INFO 15544 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2019-06-06 00:03:17.182  INFO 15544 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2019-06-06 00:03:17.338  WARN 15544 --- [restartedMain] aWebConfiguration$JpaWebMvcConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2019-06-06 00:03:17.421  WARN 15544 --- [restartedMain] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'requestMappingHandlerMapping' defined in class path resource [org/springframework/boot/autoconfigure/web/servlet/WebMvcAutoConfiguration$EnableWebMvcConfiguration.class]: Invocation of init method failed; nested exception is java.lang.IllegalStateException: Ambiguous mapping. Cannot map 'blogController' method 
+public java.lang.String com.sunset.web.admin.blogController.tag()
+to {GET /admin/type}: There is already 'blogController' bean method
+public java.lang.String com.sunset.web.admin.blogController.type() mapped.
+2019-06-06 00:03:17.424  INFO 15544 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2019-06-06 00:03:17.426  INFO 15544 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2019-06-06 00:03:17.434  INFO 15544 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2019-06-06 00:03:17.462  INFO 15544 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2019-06-06 00:03:17.468  INFO 15544 --- [restartedMain] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2019-06-06 00:03:17.505  INFO 15544 --- [restartedMain] ConditionEvaluationReportLoggingListener : 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2019-06-06 00:03:17.534 ERROR 15544 --- [restartedMain] o.s.boot.SpringApplication               : Application run failed
+
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'requestMappingHandlerMapping' defined in class path resource [org/springframework/boot/autoconfigure/web/servlet/WebMvcAutoConfiguration$EnableWebMvcConfiguration.class]: Invocation of init method failed; nested exception is java.lang.IllegalStateException: Ambiguous mapping. Cannot map 'blogController' method 
+public java.lang.String com.sunset.web.admin.blogController.tag()
+to {GET /admin/type}: There is already 'blogController' bean method
+public java.lang.String com.sunset.web.admin.blogController.type() mapped.
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1778)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:593)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:515)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:320)
+	at org.springframework.beans.factory.support.AbstractBeanFactory$$Lambda$152/399264311.getObject(Unknown Source)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:318)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:843)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:877)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:549)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:142)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:775)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:397)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:316)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1260)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1248)
+	at com.sunset.BolgApplication.main(BolgApplication.java:10)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:49)
+Caused by: java.lang.IllegalStateException: Ambiguous mapping. Cannot map 'blogController' method 
+public java.lang.String com.sunset.web.admin.blogController.tag()
+to {GET /admin/type}: There is already 'blogController' bean method
+public java.lang.String com.sunset.web.admin.blogController.type() mapped.
+	at org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry.assertUniqueMethodMapping(AbstractHandlerMethodMapping.java:618)
+	at org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry.register(AbstractHandlerMethodMapping.java:586)
+	at org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.registerHandlerMethod(AbstractHandlerMethodMapping.java:312)
+	at org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.lambda$detectHandlerMethods$1(AbstractHandlerMethodMapping.java:282)
+	at org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$$Lambda$697/780640962.accept(Unknown Source)
+	at java.util.LinkedHashMap.forEach(LinkedHashMap.java:676)
+	at org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.detectHandlerMethods(AbstractHandlerMethodMapping.java:280)
+	at org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.processCandidateBean(AbstractHandlerMethodMapping.java:252)
+	at org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.initHandlerMethods(AbstractHandlerMethodMapping.java:211)
+	at org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.afterPropertiesSet(AbstractHandlerMethodMapping.java:199)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping.afterPropertiesSet(RequestMappingHandlerMapping.java:164)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1837)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1774)
+	... 22 common frames omitted
+
+2019-06-06 00:04:16.750  INFO 496 --- [restartedMain] com.sunset.BolgApplication               : Starting BolgApplication on DESKTOP-1UTLSP6 with PID 496 (C:\Users\sunset\IdeaProjects\bolg\target\classes started by sunset in C:\Users\sunset\IdeaProjects\bolg)
+2019-06-06 00:04:16.754 DEBUG 496 --- [restartedMain] com.sunset.BolgApplication               : Running with Spring Boot v2.1.5.RELEASE, Spring v5.1.7.RELEASE
+2019-06-06 00:04:16.754  INFO 496 --- [restartedMain] com.sunset.BolgApplication               : The following profiles are active: dev
+2019-06-06 00:04:16.899  INFO 496 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2019-06-06 00:04:16.899  INFO 496 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2019-06-06 00:04:18.323  INFO 496 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data repositories in DEFAULT mode.
+2019-06-06 00:04:18.483  INFO 496 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 144ms. Found 1 repository interfaces.
+2019-06-06 00:04:19.222  INFO 496 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$1962c5b] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-06-06 00:04:20.250  INFO 496 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2019-06-06 00:04:20.303  INFO 496 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2019-06-06 00:04:20.304  INFO 496 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.19]
+2019-06-06 00:04:20.591  INFO 496 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2019-06-06 00:04:20.591  INFO 496 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 3692 ms
+2019-06-06 00:04:21.113  INFO 496 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2019-06-06 00:04:21.383  INFO 496 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2019-06-06 00:04:21.508  INFO 496 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2019-06-06 00:04:21.644  INFO 496 --- [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate Core {5.3.10.Final}
+2019-06-06 00:04:21.647  INFO 496 --- [restartedMain] org.hibernate.cfg.Environment            : HHH000206: hibernate.properties not found
+2019-06-06 00:04:21.907  INFO 496 --- [restartedMain] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.0.4.Final}
+2019-06-06 00:04:22.571  INFO 496 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2019-06-06 00:04:24.543  INFO 496 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2019-06-06 00:04:24.731  INFO 496 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2019-06-06 00:04:26.181  INFO 496 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2019-06-06 00:04:26.277  WARN 496 --- [restartedMain] aWebConfiguration$JpaWebMvcConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2019-06-06 00:04:26.561  INFO 496 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2019-06-06 00:04:27.743  INFO 496 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2019-06-06 00:04:27.749  INFO 496 --- [restartedMain] com.sunset.BolgApplication               : Started BolgApplication in 12.037 seconds (JVM running for 14.533)
+2019-06-06 00:04:34.158  INFO 496 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-06-06 00:04:34.159  INFO 496 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2019-06-06 00:04:34.194  INFO 496 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 35 ms
+2019-06-06 00:04:40.401  INFO 496 --- [http-nio-8080-exec-9] o.h.h.i.QueryTranslatorFactoryInitiator  : HHH000397: Using ASTQueryTranslatorFactory
+2019-06-06 00:18:29.576  INFO 496 --- [Thread-22] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2019-06-06 00:18:29.578  INFO 496 --- [Thread-22] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2019-06-06 00:18:29.588  INFO 496 --- [Thread-22] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2019-06-06 00:18:29.609  INFO 496 --- [Thread-22] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2019-06-06 00:18:31.270  INFO 496 --- [restartedMain] com.sunset.BolgApplication               : Starting BolgApplication on DESKTOP-1UTLSP6 with PID 496 (C:\Users\sunset\IdeaProjects\bolg\target\classes started by sunset in C:\Users\sunset\IdeaProjects\bolg)
+2019-06-06 00:18:31.271 DEBUG 496 --- [restartedMain] com.sunset.BolgApplication               : Running with Spring Boot v2.1.5.RELEASE, Spring v5.1.7.RELEASE
+2019-06-06 00:18:31.271  INFO 496 --- [restartedMain] com.sunset.BolgApplication               : The following profiles are active: dev
+2019-06-06 00:18:32.095  INFO 496 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data repositories in DEFAULT mode.
+2019-06-06 00:18:32.160  INFO 496 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 64ms. Found 1 repository interfaces.
+2019-06-06 00:18:32.320  INFO 496 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$1962c5b] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-06-06 00:18:32.745  INFO 496 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2019-06-06 00:18:32.748  INFO 496 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2019-06-06 00:18:32.749  INFO 496 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.19]
+2019-06-06 00:18:32.841  INFO 496 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2019-06-06 00:18:32.841  INFO 496 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1565 ms
+2019-06-06 00:18:33.009  INFO 496 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Starting...
+2019-06-06 00:18:33.021  INFO 496 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Start completed.
+2019-06-06 00:18:33.067  INFO 496 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2019-06-06 00:18:33.553  INFO 496 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2019-06-06 00:18:34.061  INFO 496 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2019-06-06 00:18:34.143  INFO 496 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2019-06-06 00:18:34.870  INFO 496 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2019-06-06 00:18:34.908  WARN 496 --- [restartedMain] aWebConfiguration$JpaWebMvcConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2019-06-06 00:18:35.070  INFO 496 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2019-06-06 00:18:35.941  INFO 496 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2019-06-06 00:18:35.943  INFO 496 --- [restartedMain] com.sunset.BolgApplication               : Started BolgApplication in 4.779 seconds (JVM running for 862.727)
+2019-06-06 00:18:35.949  INFO 496 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2019-06-06 00:20:56.945  INFO 496 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-06-06 00:20:56.950  INFO 496 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2019-06-06 00:20:56.994  INFO 496 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 44 ms
+2019-06-06 00:51:26.132  INFO 2924 --- [restartedMain] com.sunset.BolgApplication               : Starting BolgApplication on DESKTOP-1UTLSP6 with PID 2924 (C:\Users\sunset\IdeaProjects\bolg\target\classes started by sunset in C:\Users\sunset\IdeaProjects\bolg)
+2019-06-06 00:51:26.139 DEBUG 2924 --- [restartedMain] com.sunset.BolgApplication               : Running with Spring Boot v2.1.5.RELEASE, Spring v5.1.7.RELEASE
+2019-06-06 00:51:26.139  INFO 2924 --- [restartedMain] com.sunset.BolgApplication               : The following profiles are active: dev
+2019-06-06 00:51:26.342  INFO 2924 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2019-06-06 00:51:26.343  INFO 2924 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2019-06-06 00:51:28.205  INFO 2924 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data repositories in DEFAULT mode.
+2019-06-06 00:51:28.411  INFO 2924 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 186ms. Found 1 repository interfaces.
+2019-06-06 00:51:29.414  INFO 2924 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$b44ecb56] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-06-06 00:51:30.742  INFO 2924 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2019-06-06 00:51:30.807  INFO 2924 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2019-06-06 00:51:30.808  INFO 2924 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.19]
+2019-06-06 00:51:31.162  INFO 2924 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2019-06-06 00:51:31.163  INFO 2924 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 4819 ms
+2019-06-06 00:51:31.762  INFO 2924 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2019-06-06 00:51:32.068  INFO 2924 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2019-06-06 00:51:32.224  INFO 2924 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2019-06-06 00:51:32.393  INFO 2924 --- [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate Core {5.3.10.Final}
+2019-06-06 00:51:32.396  INFO 2924 --- [restartedMain] org.hibernate.cfg.Environment            : HHH000206: hibernate.properties not found
+2019-06-06 00:51:32.740  INFO 2924 --- [restartedMain] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.0.4.Final}
+2019-06-06 00:51:33.522  INFO 2924 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2019-06-06 00:51:35.516  INFO 2924 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2019-06-06 00:51:35.692  INFO 2924 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2019-06-06 00:51:37.196  INFO 2924 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2019-06-06 00:51:37.294  WARN 2924 --- [restartedMain] aWebConfiguration$JpaWebMvcConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2019-06-06 00:51:37.597  INFO 2924 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2019-06-06 00:51:38.772  INFO 2924 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2019-06-06 00:51:38.779  INFO 2924 --- [restartedMain] com.sunset.BolgApplication               : Started BolgApplication in 13.88 seconds (JVM running for 17.051)
+2019-06-06 00:51:58.548  INFO 2924 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-06-06 00:51:58.549  INFO 2924 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2019-06-06 00:51:58.584  INFO 2924 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 35 ms
+2019-06-06 00:52:14.821  INFO 2924 --- [http-nio-8080-exec-7] o.h.h.i.QueryTranslatorFactoryInitiator  : HHH000397: Using ASTQueryTranslatorFactory

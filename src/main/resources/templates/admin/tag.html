@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en"  xmlns:th="http://www.thymeleaf.org">
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
+<head th:replace="common/common ::stylecss(~{::title})">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <meta charset="UTF-8">
+    <title>后台管理</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/semantic-ui@2.4.2/dist/semantic.min.css">
+    <link rel="stylesheet" href="../../static/css/me.css">
+
+</head>
+<body>
+<!--导航条-->
+<nav th:replace="common/commonnav::navafter(3)" class="ui inverted segment attached m-padded-tb-mini" >
+    <div class="ui container">
+        <div class="ui inverted secondary menu stackable menu">
+            <h2 class="ui teal header item ">blog</h2>
+            <a href="#" class="mobile item mobile-display-hide"><i class="icon home"></i>博客</a>
+            <a href="#" class="mobile item mobile-display-hide"><i class="icon idea"></i>分类</a>
+            <a href="#" class="mobile item mobile-display-hide"><i class="icon tags"></i>标签</a>
+            <div class="item right menu">
+                <div class="ui item dropdown">
+                    <div class="text">
+                        <img src="../../static/images/bl1.jpg" alt="" class="ui avatar image" >
+                        哈哈
+                    </div>
+                    <div class="icon dropdown"></div>
+                    <div class="menu">
+                        <a href="#" class="item">修改资料</a>
+                        <a href="#" class="item">注销</a>
+                    </div>
+                </div>
+
+            </div>
+
+
+        </div>
+        <div class="ui m-right-top">
+            <a href="#" class="ui black vertical animated button m-display meu" style="width: 50px">
+                <div class="hidden content">展开</div>
+                <div class="visible content">
+                    <i class="sidebar icon"></i>
+                </div>
+            </a>
+            <!--        <a href="#" class="ui button black m-right-top m-display">-->
+            <!--            <i class="sidebar icon "></i>-->
+            <!--        </a>-->
+
+        </div>
+    </div>
+
+
+</nav>
+<!--中间部分-->
+<div class="ui">
+    <div class="ui container">
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <div class="ui grid ">
+
+            <div class=" wide column">
+                <table class="ui table celled">
+                    <thead>
+                    <tr>
+                        <th>标签</th>
+                        <th>操作</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr>
+                        <td>11</td>
+                        <td>
+                            <a href="#" class="ui button teal">编辑</a>
+                            <a href="#" class="ui button red ">删除</a>
+                        </td>
+                    </tr>
+                    </tbody>
+                    <tfoot>
+                    <tr>
+                        <th colspan="2">
+                            <div class="ui pagination menu ">
+                                <a class="item ">上一页</a>
+                                <a class="item">下一页</a>
+                            </div>
+                            <a class="ui button teal right floated" href="#" >新增</a>
+                        </th>
+
+                    </tr>
+                    </tfoot>
+
+
+                </table>
+
+            </div>
+
+        </div>
+
+    </div>
+</div>
+
+</div>
+
+
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+
+
+<!--底部footer-->
+<footer  class="ui segment vi inverted m-padded-tb-massive ">
+    <div class="ui container center aligned m-opacity-mini">
+        <div class="ui grid divided inverted stackable">
+            <div class="three wide column ">
+                <img src="../../static/images/wechart.png" class="ui rounded image centered" width="100px" height="100">
+            </div>
+            <div class="three wide column">
+                <h4 class="ui header inverted">最新博客</h4>
+                <div class="ui inverted link list">
+                    <a href="#" class="item">用户故事(user story)</a>
+                    <a href="#" class="item">用户故事(user story)</a>
+                    <a href="#" class="item">用户故事(user story)</a>
+                </div>
+            </div>
+            <div class="three wide column">
+                <h4 class="ui header inverted">联系我们</h4>
+                <div class="ui inverted link list">
+                    <a href="#" class="item">Email :11111111@qq.com</a>
+                    <a href="#" class="item">QQ:1212121</a>
+                </div>
+            </div>
+            <div class="seven wide column">
+                <h4>个人总结</h4>
+                <div class="ui inverted  ">
+                    <p class="m-opacity-mini m-text-thin">
+                        低首抬眉之间，好多日子便水远山长了。所谓的天长地久，一生一世，不过是一朵花开的时间；所谓的姹紫嫣红，也不过是一场东风过隙</P></div>
+
+            </div>
+        </div>
+        <div class="ui inverted section divider">
+            <p class="m-text-thin m-text-space m-padded-tb-foot m-text-size-small">Copyright © 2019 sunset All Rights
+                Reserved
+                如有疑问联系作者 </p>
+        </div>
+    </div>
+
+</footer>
+<script src="http://lib.sinaapp.com/js/jquery/2.0.2/jquery-2.0.2.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/semantic-ui@2.4.2/dist/semantic.min.js"></script>
+<script>
+    $('.meu').click(function () {
+
+        $('.mobile').toggleClass('mobile-display-hide')
+    })
+    $('.dropdown.ui').dropdown();
+
+
+</script>
+</body>
+
+</html>
