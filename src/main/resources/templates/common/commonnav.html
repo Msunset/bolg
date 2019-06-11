@@ -38,11 +38,45 @@
 
 
 </nav>
+<!--后台管理导航栏-->
+<nav th:fragment="navafter(n)" class="ui inverted segment attached m-padded-tb-mini">
+    <div class="ui container">
+        <div class="ui inverted secondary menu stackable">
+            <h2 class="ui teal header item ">后台管理</h2>
+            <a href="#" class="mobile item mobile-display-hide "th:href="@{/admin/blog}" th:classappend="${n==1} ? 'active'"><i class="icon home"></i>博客</a>
+            <a href="#" class="mobile item mobile-display-hide"th:href="@{/admin/type}" th:classappend="${n==2} ? 'active'"><i class="icon idea"></i>分类</a>
+            <a href="#" class="mobile item mobile-display-hide"th:href="@{/admin/tag}" th:classappend="${n==4} ? 'active'"><i class="icon tags"></i>标签</a>
+            <div class="item right">
+                <div class="ui mobile input inverted icon transparent mobile-display-hide">
+                    <input type="text" placeholder="Search.....">
+                    <i class="search icon link"></i>
+                </div>
+            </div>
+
+        </div>
+        <div class="ui m-right-top">
+            <a href="#" class="ui black vertical animated button m-display meu" style="width: 50px">
+                <div class="hidden content">展开</div>
+                <div class="visible content">
+                    <i class="sidebar icon"></i>
+                </div>
+            </a>
+            <!--        <a href="#" class="ui button black m-right-top m-display">-->
+            <!--            <i class="sidebar icon "></i>-->
+            <!--        </a>-->
+
+        </div>
+    </div>
+
+
+</nav>
+
+
 <footer th:fragment="foot" class="ui segment vi inverted m-padded-tb-massive ">
     <div class="ui container center aligned m-opacity-mini">
         <div class="ui grid divided inverted stackable">
             <div class="three wide column ">
-                <img src="../static/images/wechart.png" class="ui rounded image centered" width="100px" height="100">
+                <img src="../static/images/wechart.png" class="ui rounded image centered" width="100px" height="100" th:src="@{images/wechart.png}">
             </div>
             <div class="three wide column">
                 <h4 class="ui header inverted">最新博客</h4>

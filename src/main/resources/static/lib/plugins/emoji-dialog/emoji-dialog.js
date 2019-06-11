@@ -289,7 +289,7 @@
 
 			tab.find("li").bind(exports.mouseOrTouch("click", "touchend"), function() {
 				var $this     = $(this);
-				emojiTabIndex = $this.index();
+				emojiTabIndex = $this.login();
 
 				$this.addClass("active").siblings().removeClass("active");
 				tabBoxs.eq(emojiTabIndex).show().siblings().hide();

@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en"  xmlns:th="http://www.thymeleaf.org">
 <html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
-<head th:replace="common/common ::head(~{::title})">
+    <head th:replace="common/common ::head(~{::title})">
     <meta name="viewport" content="width=device-width,initial-scale=1.0">
     <meta charset="UTF-8">
     <title>后台管理</title>
@@ -11,10 +11,10 @@
 </head>
 <body>
 <!--导航条-->
-<nav class="ui inverted segment attached m-padded-tb-mini">
+<nav th:replace="common/commonnav::navafter(1)" class="ui inverted segment attached m-padded-tb-mini">
     <div class="ui container">
         <div class="ui inverted secondary menu stackable menu">
-            <h2 class="ui teal header item ">blog</h2>
+            <h2 class="ui teal header item ">后台管理</h2>
             <a href="#" class="mobile item mobile-display-hide"><i class="icon home"></i>博客</a>
             <a href="#" class="mobile item mobile-display-hide"><i class="icon idea"></i>分类</a>
             <a href="#" class="mobile item mobile-display-hide"><i class="icon tags"></i>标签</a>

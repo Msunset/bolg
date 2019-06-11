@@ -173,7 +173,9 @@ body{
 .m-mmargin-tb{
     margin-bottom: 0.5em!important;
 }
-
+.m-mmargin-leaf{
+    margin-left: 0.5em!important;
+}
 /*----------手机端显示的属性------------*/
 @media screen and (max-width: 768px){
     .mobile-display-hide{
